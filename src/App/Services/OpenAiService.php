@@ -69,24 +69,24 @@ class OpenAiService {
 
 		$prompts = [
 			'title'   => "
-            Сгенерируй заголовок статьи на тему: \"{$prompt}\".
-            Требования:
-            - Заголовок должен быть информативным, привлекательным и коротким (до 10 слов).
-            - Без кавычек и лишних символов.
-            - Не добавляй теги <h1>, просто текст заголовка.
-            - Используй правильный регистр и избегай кликбейта.
-        ",
+			        Generate an article title on the topic: \"{$prompt}\".
+			        Requirements:
+			        - The title should be informative, engaging, and short (up to 10 words).
+			        - No quotation marks or extra characters.
+			        - Do not add <h1> tags, just the text of the title.
+			        - Use proper capitalization and avoid clickbait.
+			    ",
 			'content' => "
-            Сгенерируй содержимое статьи на тему: \"{$prompt}\".
-            Форматирование:
-            - Статья должна быть логически структурирована.
-            - Заголовки 2-го уровня должны быть в <h2>.
-            - Заголовки 3-го уровня должны быть в <h3>.
-            - Основной текст должен быть в <p>.
-            - Используй списки <ul> и <ol>, если это уместно.
-            - Не добавляй заголовок статьи, только контент.
-            - Не включай <h1>, <html>, <head>, <body> или <doctype>.
-        "
+			        Generate article content on the topic: \"{$prompt}\".
+			        Formatting:
+			        - The article should be logically structured.
+			        - Use <h2> for second-level headings.
+			        - Use <h3> for third-level headings.
+			        - The main text should be inside <p>.
+			        - Use <ul> and <ol> lists where appropriate.
+			        - Do not include the article title, only the content.
+			        - Do not include <h1>, <html>, <head>, <body>, or <doctype>.
+			    "
 		];
 
 		$response = [];
@@ -105,7 +105,7 @@ class OpenAiService {
 				'messages'    => [
 					[
 						'role'    => 'system',
-						'content' => 'Ты - профессиональный копирайтер-шутник, все переводишь в черный юмор! '
+						'content' => 'You are a professional copywriter with a dark humor twist! You turn everything into dark comedy!'
 					],
 					[ 'role' => 'user', 'content' => $prompt ]
 				],
