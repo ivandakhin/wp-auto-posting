@@ -1,0 +1,49 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+
+.uk-input, .uk-select, .uk-textarea {
+    max-width: 100%;
+    width: 100%;
+    border: 0 none !important;
+    padding: 0 10px  !important;
+    background: #fff  !important;
+    color: #666  !important;
+    border: 1px solid #e5e5e5  !important;
+    transition: .2sease-in-out  !important;
+    transition-property: color, background-color, border  !important;
+    border-radius: 3px  !important;
+}
+
+.uk-input:focus,
+.uk-textarea:focus,
+.uk-select:focus {
+    outline: none !important;  /* Убирает стандартную обводку */
+    box-shadow: none !important;  /* Убирает тень */
+    border-color: #ccc !important;  /* Сбрасывает цвет границы */
+}
+
+.uk-button {
+    border-radius: 3px  !important;
+}
+
+.uk-label{
+    font-size: 10px  !important;
+}
+
+.uk-article p{
+    padding: 0 25px 0 0;
+}
+
+.uk-textarea{
+    padding: 10px !important;
+}
+
+.wp-auto-posting-step {
+    display: none;
+}
+
+.wp-auto-posting-step.active {
+    display: block;
+}
